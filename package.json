@@ -1,0 +1,19 @@
+{
+  "name": "two-player-tetris",
+  "version": "1.0.0",
+  "description": "Tetris where one player has the controls while the other player has the screen, the players must communicate and work together to play tetris",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Team Cheeseboard",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "nodemon": "^1.19.4",
+    "short-id": "0.1.0-1"
+  }
+}
