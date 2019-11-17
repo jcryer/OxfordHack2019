@@ -1,0 +1,1 @@
+{"user":"j","room":"2aed8c","data":{"candidate":{"candidate":"candidate:842163049 1 udp 1677729535 192.76.8.72 63168 typ srflx raddr 192.168.43.174 rport 63168 generation 0 ufrag q98f network-cost 999","sdpMLineIndex":"0","sdpMid":"0"}}}

@@ -1,0 +1,1 @@
+#{"user":"j","room":"f22410","data":{"candidate":{"candidate":"candidate:842163049 1 udp 1677729535 192.76.8.72 61332 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag R2wX network-cost 999","sdpMLineIndex":"0","sdpMid":"0"}}}

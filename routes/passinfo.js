@@ -5,7 +5,7 @@ var router = express.Router();
 
 router.post("/", function(req,res,next){
 	var body = req.body;
-	console.log("post "+body.room+" "+body.user);
+	//console.log("post "+body.room+" "+body.user);
 	var output = "";
 	if (body.data.type != "offer" && body.data.type != "answer") {
 		output += "#";
@@ -30,7 +30,7 @@ router.get("/", function(req,res,next){
 	}else{
 		userO = "c";
 	}
-	console.log("get request "+room +" "+userO);
+	//console.log("get request "+room +" "+userO);
 
 	fs.access(process.cwd()+`/connections/${userO}-${room}.txt`, fs.F_OK, (err) => {
 	  if (err) {
@@ -53,8 +53,8 @@ router.get("/", function(req,res,next){
 				return;
 			}
 			
-			console.log("data:");
-			console.log(line[0]);
+			//console.log("data:");
+			//console.log(line[0]);
 			res.send(line[0]);
 
 			string = ""

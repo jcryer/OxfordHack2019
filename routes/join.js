@@ -9,16 +9,16 @@ function getNewPin(res,req,pin){
   		if (err) throw err;
   		
   		lines = data.split("\r\n");
-  		console.log(lines);
+  		//console.log(lines);
 
 
       var line;
-      console.log(pin);
+      //console.log(pin);
       for(var i = 1; i < lines.length; i++){
         line = lines[i].split(",");
         if(line[0] == pin){
           res.send(line[1]);
-          console.log(line[1]);
+          //console.log(line[1]);
           return;
         }
       }

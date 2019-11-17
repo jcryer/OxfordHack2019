@@ -10,7 +10,7 @@ function getNewPin(res,req,ip){
   		if (err) throw err;
   		
   		lines = data.split("\r\n");
-  		console.log(lines);
+  		//console.log(lines);
 
   		lines[0]++;
 
