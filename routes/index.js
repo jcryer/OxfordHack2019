@@ -29,5 +29,17 @@ router.get("/login.js", function (req, res, next) {
 
 });
 
+router.get("/simplepeer.min.js", function(req,res,next){
+	var template = fs.readFileSync(process.cwd() + "/simplepeer.min.js", "utf8");
+
+	res.send(template);
+});
+
+router.get("/game.js", function(req,res,next){
+	var template = fs.readFileSync(process.cwd() + "/game.js", "utf8");
+
+	res.send(template);
+});
+
 
 module.exports = router;

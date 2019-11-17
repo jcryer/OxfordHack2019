@@ -21,7 +21,7 @@
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  
+
 }
 .form input {
   font-family: FontAwesome, "Roboto", sans-serif;
@@ -33,7 +33,7 @@
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
-  
+
 }
 
 #gamePin {
@@ -75,7 +75,7 @@
 
 
 .form .message {
-  
+
   margin: 6px 6px;
   color: #808080;
   font-size: 11px;
@@ -83,7 +83,7 @@
   font-weight: bold;
   font-style: normal;
 
-  
+
 
 }
 .form .message a {
@@ -135,5 +135,44 @@ body {
   background: linear-gradient(to left, #76b852, #8DC26F);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lWindHead {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+
+.lWindBody {
+  padding: 2px 16px;
+}
+
+
+.lWindFoot {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+.lWind {
+  display: none;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
 }

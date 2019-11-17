@@ -1,27 +1,39 @@
 <html lang="en" >
     <head>
-        <title>Login</title>
+        <title>Tetris Tension</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> 
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+        <script src="simplepeer.min.js"></script>
         <script src="login.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
-
-
     </head>
 
     <body class="body">
 
+
         <div class="login-page">
             <div class="form">
+                <b style="font-size: 30px;">TETRIS TENSION</b>
+                <br><br>
 
+                <div id="loseWindow" class="lWind">
+                  <div class="lWindHead">
+                    <h1>Game Over!</h1>
+                  </div>
+                  <div class="lWindBody">
+                    <p id="finalScore">Score: </p>
+                    <p id="finalLines">Lines: </p>
+                  </div>
+                  <div class="lWindFoot">
+                    <button id="reset" type="button">Back to menu</button>
+                  </div>
+                </div>
 
-                <b>Two-Player Tetris</b>
-                <br>
                 <p id="incorrect">Incorrect pin.</p>
                 <div id="mainScreen">
                     <input type="gamepin" id="pin" placeholder="&#xf023;  PIN"/>
@@ -29,12 +41,37 @@
                     </br></br>
                     <button type="button" id="creategame">Create Game</button>
                 </div>
+
                 <div id="createScreen">
                     <p id="gamePin"></p>
                     <button type="button" id="back">Back</button>
                 </div>
+
+                <div id="gameScreen">
+                    <table>
+                        <tr>
+                            <th><canvas id="myCanvas"  width="200" height="400"></canvas></th>
+                            <th style="vertical-align:top;">
+                                <table style="border:1px solid black;">
+                                    <tr>
+                                        <th style="font-weight: normal;">Score: <input type="text" id="Score" value="0" style="border:0px;width: 60px;"></input></th>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: normal;">Lines: <input type="text" id="Lines" value="0" style="border:0px;width: 60px;"></input></td>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                    </table>
+<!--
+                <audio src="mii.m4A" autoplay="autoplay" loop>
+                    not compatable
+                </audio>-->
+        <script src="game.js"></script>
+
+                </div>
             </div>
+
         </div>
     </body>
 </html>
-

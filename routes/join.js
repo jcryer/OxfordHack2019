@@ -22,7 +22,6 @@ function getNewPin(res,req,pin){
           return;
         }
       }
-  	  res.send("not found");
 
       //Sends to the user
 
